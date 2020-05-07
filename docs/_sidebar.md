@@ -1,7 +1,10 @@
 * [首页](/)
 * [指南](guide "The greatest guide in the world")
-* [Markdown](markdown)
+* [Markdown](markdown-offline)
 * [Theme](theme)
+* [服务器](server)
+* [VScode](vscode)
+* [Draw.io](draw)
 - **Links**
 - [Github](https://github.com/jhildenbiddle/docsify-themeable)
 - [NPM](https://www.npmjs.com/package/docsify-themeable)
