@@ -1,13 +1,6 @@
 # 当我有一台服务器时我做了什么
 
-当一八年末的时候，我写了一篇文章 [当我有一台服务器时我做了什么](https://github.com/shfshanyue/op-note/blob/master/when-server.md)
-
-又是年末，我服务器的架构也发生了一些变化，因此总结一番
-
-<!--more-->
-
-+ 原文地址: [当我有一台服务器时我做了什么](https://github.com/shfshanyue/op-note/blob/master/when-server-2019.md)
-+ 系列文章: [当我有一台服务器时我做了什么](https://github.com/shfshanyue/op-note)
+参考文章: [当我有一台服务器时我做了什么](https://github.com/shfshanyue/op-note)
 
 ## 概览
 
@@ -15,7 +8,7 @@
 
 服务器列表：
 
-+ `dev`: 1C2G，不到一百块钱。用以日常编码，简单的反向代理以及项目部署
++ `dev`: 1C2G。用以日常编码，简单的反向代理以及项目部署
 
 ![](_media/docker-compose.jpg)
 
@@ -25,7 +18,26 @@
 
 1. 在公司 Mac 及我自己的笔记本间同步博客实在太痛苦了，而使用服务器作为中介则方便很多
 
-由于在服务器下写博客以及一些个人的代码，因此我新买的 MBP 也变成了一个显示器
+### 启动配置
+
+```yaml
+version: '3'
+
+services:
+  traefik:
+    image: traefik:v2.0
+    command: --api.insecure=true --providers.docker
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+```
+
+
+
+### 目标
+
 
 ### 开发环境
 
@@ -37,6 +49,23 @@
 
 ``` bash
 $ rsync ~/Documents/tmux.png dev:/path/Documents/blog/op/assets/dev-env.png
+```
+
+#### vscode 
+
+```yaml
+version: '3'
+
+services:
+  code-server:
+    image: codercom/code-server
+    # ports:
+    #   - "8080:8080"
+    volumes:
+      - /www/mzone:/home/coder/project
+    environment:
+      PASSWORD: code321
+
 ```
 
 `vscode remote`
