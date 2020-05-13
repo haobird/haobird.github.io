@@ -7,3 +7,13 @@
 星球，动物，神话人物
 
 aegis(宙斯盾)
+
+
+## 建立app简介网站
+
+基于gatsbyjs框架，部署在vercel服务器，大陆访问走GCP台湾机房。
+
++ [gatsbyjs](https://www.gatsbyjs.cn/) 
++ [vercel](https://vercel.com/)
+
+[vercel无服务部署Go函数](https://xuthus.cc/go/vercel-run-go.html)
