@@ -1,5 +1,15 @@
 # Spring Boot 学习教程
 
+## Java 环境准备
+
+基本命令
+```
+/usr/libexec/java_home -V   查看java安装目录
+java -v   查看版本
+brew install maven   安装Maven
+mvn -v      查看maven版本
+```
+
 ## 项目结构介绍
 
 + src/main/java 程序开发以及主程序入口

@@ -33,6 +33,7 @@
 - [htop命令及示例](htop)
 - **代码学习**
 - [Spring Boot学习](spring-boot)
+- [Mysql](mysql)
 - **Links**
 - [Github](https://github.com/jhildenbiddle/docsify-themeable)
 - [NPM](https://www.npmjs.com/package/docsify-themeable)
