@@ -11,6 +11,7 @@
 * [VScode](vscode)
 * [Draw.io](draw)
 - **服务器配置**
+* [mac环境配置](mac.md)
 * [服务器登录配置](server-init)
 * [Git](git)
 * [ssh key 与 github 配置](ssh-setting)
@@ -33,8 +34,11 @@
 - [htop命令及示例](htop)
 - **代码学习**
 - [Spring Boot学习](spring-boot)
+- [Java](java)
 - [Mysql](mysql)
 - [Kubernets](kubernets)
+- [二进制](binary)
+- [Redis](redis)
 - **Links**
 - [Github](https://github.com/jhildenbiddle/docsify-themeable)
 - [NPM](https://www.npmjs.com/package/docsify-themeable)
