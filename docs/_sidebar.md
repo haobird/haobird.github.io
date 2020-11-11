@@ -39,6 +39,9 @@
 - [Kubernets](kubernets)
 - [二进制](binary)
 - [Redis](redis)
+- **IOT**
+- [硬件编码](iot-hardware-code)
+- [Redis](redis)
 - **Links**
 - [Github](https://github.com/jhildenbiddle/docsify-themeable)
 - [NPM](https://www.npmjs.com/package/docsify-themeable)
